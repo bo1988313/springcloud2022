@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/cloud-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-consumer-order80/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-consumer-order80/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-eureka-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/paymanager-8081/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/paymanager-8081/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

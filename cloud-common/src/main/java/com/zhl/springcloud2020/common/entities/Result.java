@@ -1,4 +1,4 @@
-package com.zhl.springcloud2020.entities;
+package com.zhl.springcloud2020.common.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,8 +18,4 @@ public class Result<T> {
 
     private T data;
 
-
-    public Result(Integer code, String message) {
-        this(code, message, null);
-    }
 }

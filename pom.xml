@@ -11,6 +11,7 @@
         <module>paymanager-8081</module>
         <module>cloud-consumer-order80</module>
         <module>cloud-common</module>
+        <module>cloud-eureka-server</module>
     </modules>
     <packaging>pom</packaging>
 

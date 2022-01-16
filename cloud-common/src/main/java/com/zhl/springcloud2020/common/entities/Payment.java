@@ -1,4 +1,4 @@
-package com.zhl.springcloud2020.entities;
+package com.zhl.springcloud2020.common.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,8 +15,4 @@ public class Payment {
     private Long id;
 
     private String serial;
-
-    public Payment(String serial) {
-        this(null, serial);
-    }
 }

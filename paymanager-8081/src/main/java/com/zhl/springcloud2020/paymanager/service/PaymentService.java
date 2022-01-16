@@ -1,6 +1,6 @@
 package com.zhl.springcloud2020.paymanager.service;
 
-import com.zhl.springcloud2020.entities.Payment;
+import com.zhl.springcloud2020.common.entities.Payment;
 
 /**
  * @author Administrator

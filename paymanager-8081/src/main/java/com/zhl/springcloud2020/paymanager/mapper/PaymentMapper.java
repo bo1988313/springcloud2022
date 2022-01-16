@@ -1,6 +1,6 @@
 package com.zhl.springcloud2020.paymanager.mapper;
 
-import com.zhl.springcloud2020.entities.Payment;
+import com.zhl.springcloud2020.common.entities.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

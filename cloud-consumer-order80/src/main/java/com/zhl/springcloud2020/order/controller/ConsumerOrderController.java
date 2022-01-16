@@ -1,9 +1,8 @@
 package com.zhl.springcloud2020.order.controller;
 
-import com.zhl.springcloud2020.entities.Payment;
-import com.zhl.springcloud2020.entities.Result;
+import com.zhl.springcloud2020.common.entities.Payment;
+import com.zhl.springcloud2020.common.entities.Result;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
