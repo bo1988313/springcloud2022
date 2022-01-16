@@ -36,10 +36,10 @@ public class PaymentController {
         Payment payment = paymentService.getPaymentById(id);
         if (null == payment) {
             log.warn("查询订单失败： " + id);
-            return new Result(400, "查询失败", null);
+            return new Result(400, "查询失败aaaaaaaaaa", null);
         } else {
             log.warn("查询订单成功： " + payment.toString());
-            return new Result(200, "查询订单成功", payment);
+            return new Result(200, "查询订单成功cccccc", payment);
         }
     }
 }
