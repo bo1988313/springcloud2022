@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-
-    <artifactId>paymanager-8081</artifactId>
+    <artifactId>cloud-consumer-order80</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -18,7 +17,6 @@
     </properties>
 
     <dependencies>
-        <!-- 导入自己的common工程 -->
         <dependency>
             <groupId>org.zhl</groupId>
             <artifactId>cloud-common</artifactId>
@@ -79,4 +77,5 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+
 </project>

@@ -1,10 +1,9 @@
 package com.zhl.springcloud2020.paymanager.controller;
 
-import com.zhl.springcloud2020.paymanager.entities.Payment;
-import com.zhl.springcloud2020.paymanager.entities.Result;
+import com.zhl.springcloud2020.entities.Payment;
+import com.zhl.springcloud2020.entities.Result;
 import com.zhl.springcloud2020.paymanager.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

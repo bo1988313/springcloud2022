@@ -1,7 +1,6 @@
 package com.zhl.springcloud2020.paymanager.service;
 
-import com.zhl.springcloud2020.paymanager.entities.Payment;
-import org.apache.ibatis.annotations.Param;
+import com.zhl.springcloud2020.entities.Payment;
 
 /**
  * @author Administrator

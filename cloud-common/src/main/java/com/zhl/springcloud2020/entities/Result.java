@@ -1,4 +1,4 @@
-package com.zhl.springcloud2020.paymanager.entities;
+package com.zhl.springcloud2020.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

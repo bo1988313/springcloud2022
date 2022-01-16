@@ -1,6 +1,6 @@
 package com.zhl.springcloud2020.paymanager.service.impl;
 
-import com.zhl.springcloud2020.paymanager.entities.Payment;
+import com.zhl.springcloud2020.entities.Payment;
 import com.zhl.springcloud2020.paymanager.mapper.PaymentMapper;
 import com.zhl.springcloud2020.paymanager.service.PaymentService;
 import org.springframework.stereotype.Service;
