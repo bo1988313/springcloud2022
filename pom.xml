@@ -16,6 +16,7 @@
         <module>paymanager8082</module>
         <module>cloud-zookeeper-paymanager8083</module>
         <module>cloud-consumer-order-zk80</module>
+        <module>cloud-consul-paymanager8084</module>
     </modules>
     <packaging>pom</packaging>
 

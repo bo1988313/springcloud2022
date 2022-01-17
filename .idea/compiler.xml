@@ -14,6 +14,7 @@
         <module name="cloud-consumer-order-zk80" />
         <module name="cloud-common" />
         <module name="paymanager8082" />
+        <module name="cloud-consul-paymanager8084" />
         <module name="cloud-consumer-order80" />
       </profile>
     </annotationProcessing>
