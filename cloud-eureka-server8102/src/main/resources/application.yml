@@ -2,14 +2,14 @@ spring:
   application:
     name: cloud-eureka-service
 server:
-  port: 8101
+  port: 8102
 eureka:
   instance:
-    hostname: localhost.eureka8101.com
+    hostname: localhost.eureka8102.com
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:8102/eureka/
+      defaultZone: http://${eureka.instance.hostname}:8101/eureka/
