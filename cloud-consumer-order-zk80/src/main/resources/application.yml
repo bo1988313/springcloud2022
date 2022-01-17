@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    zookeeper:
+      connect-string: localhost.zhl.kafka:2181,localhost.zhl.kafka:2182,localhost.zhl.kafka:2183
+  application:
+    name: cloud-consumer-service
+server:
+  port: 80

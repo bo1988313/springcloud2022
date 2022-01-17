@@ -14,6 +14,8 @@
         <module>cloud-eureka-server</module>
         <module>cloud-eureka-server8102</module>
         <module>paymanager8082</module>
+        <module>cloud-zookeeper-paymanager8083</module>
+        <module>cloud-consumer-order-zk80</module>
     </modules>
     <packaging>pom</packaging>
 
