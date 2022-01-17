@@ -15,21 +15,29 @@ import javax.annotation.Resource;
 @RequestMapping("/consumer")
 @Slf4j
 public class ConsumerOrderController {
-
-    private static final String CREATPATH = "http://localhost:8081/payment/create";
-
-    private static final String GETPATH = "http://localhost:8081/payment/get/";
+    /**
+     * 新增订单接口
+     */
+    private static final String CREATPATH = "payment/create";
+    /**
+     * 查询订单接口
+     */
+    private static final String GETPATH = "payment/get/";
+    /**
+     * 订单服务路径
+     */
+    private static final String PAYMANAGER_PATH = "http://CLOUD-PAYMANAGER-SERVICE/";
 
     @Resource
     private RestTemplate restTemplate;
 
     @GetMapping("/payment/create")
     public Result savePayment(@RequestBody Payment payment) {
-        return restTemplate.postForObject(CREATPATH, payment, Result.class);
+        return restTemplate.postForObject(PAYMANAGER_PATH + CREATPATH, payment, Result.class);
     }
 
     @GetMapping("/payment/get/{id}")
     public Result savePayment(@PathVariable("id") Long id) {
-        return restTemplate.getForObject(GETPATH + id, Result.class);
+        return restTemplate.getForObject(PAYMANAGER_PATH + GETPATH + id, Result.class);
     }
 }
