@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-consumer-order80</artifactId>
+    <artifactId>cloud-zookeeper-paymanager8083</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -17,6 +17,13 @@
     </properties>
 
     <dependencies>
+        <!-- 整合zookeeper客户端 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
+        </dependency>
+
+        <!-- 导入自己的common工程 -->
         <dependency>
             <groupId>org.zhl</groupId>
             <artifactId>cloud-common</artifactId>
@@ -33,32 +40,26 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-        <!-- 整合eureka 客户端 -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.mybatis.spring.boot</groupId>-->
-<!--            <artifactId>mybatis-spring-boot-starter</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.10</version>
+        </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba</groupId>-->
-<!--            <artifactId>druid-spring-boot-starter</artifactId>-->
-<!--            <version>1.1.10</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>mysql</groupId>-->
-<!--            <artifactId>mysql-connector-java</artifactId>-->
-<!--        </dependency>-->
-
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-jdbc</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
