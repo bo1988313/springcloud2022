@@ -1,5 +1,6 @@
 package com.zhl.springcloud2020.paymanager.controller;
 
+import com.netflix.discovery.DiscoveryClient;
 import com.zhl.springcloud2020.common.entities.Payment;
 import com.zhl.springcloud2020.common.entities.Result;
 import com.zhl.springcloud2020.paymanager.service.PaymentService;
