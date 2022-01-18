@@ -11,3 +11,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost.eureka8101.com:8101/eureka/,http://localhost.eureka8101.com:8102/eureka/
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+logging:
+  level:
+    com.zhl.feignconsumer.service: debug
