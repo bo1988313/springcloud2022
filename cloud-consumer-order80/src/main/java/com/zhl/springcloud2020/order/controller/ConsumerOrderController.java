@@ -3,6 +3,7 @@ package com.zhl.springcloud2020.order.controller;
 import com.zhl.springcloud2020.common.entities.Payment;
 import com.zhl.springcloud2020.common.entities.Result;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
@@ -39,5 +40,16 @@ public class ConsumerOrderController {
     @GetMapping("/payment/get/{id}")
     public Result savePayment(@PathVariable("id") Long id) {
         return restTemplate.getForObject(PAYMANAGER_PATH + GETPATH + id, Result.class);
+    }
+
+    @GetMapping("/payment/getforentity/{id}")
+    public Result savePaymentByEntity(@PathVariable("id") Long id) {
+        ResponseEntity<Result> entity = restTemplate.getForEntity(PAYMANAGER_PATH + GETPATH + id, Result.class);
+        if(entity.getStatusCode().is2xxSuccessful()){
+            return entity.getBody();
+        }
+        else {
+            return new Result(entity.getStatusCode().value(), "调用失败", entity.getBody());
+        }
     }
 }

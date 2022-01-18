@@ -1,17 +1,17 @@
-package com.zhl.springcloud2020;
+package com.zhl.consumerzk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @author Administrator
  */
 @SpringBootApplication
-@EnableEurekaServer
-public class Server8102 {
+@EnableDiscoveryClient
+public class ZkConsumer80 {
 
     public static void main(String[] args) {
-        SpringApplication.run(Server8102.class, args);
+        SpringApplication.run(ZkConsumer80.class, args);
     }
 }
