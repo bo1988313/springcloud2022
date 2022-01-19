@@ -22,9 +22,9 @@ public class HystrixPayImpl implements HystrixPayServer {
         return "端口:" + port + "执行成功";
     }
 
-    @HystrixCommand(fallbackMethod = "doTimeOutHandler",commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "4000")
-    })
+//    @HystrixCommand(fallbackMethod = "doTimeOutHandler",commandProperties = {
+//            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "10000")
+//    })
     @Override
     public String doTimeOut(long id){
         try {
