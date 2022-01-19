@@ -1,5 +1,6 @@
 package com.zhl.comsumer.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.zhl.comsumer.service.FeignHystrixOrderService;
@@ -14,6 +15,7 @@ import javax.annotation.Resource;
 /**
  * @author Administrator
  */
+@DefaultProperties(defaultFallback="doTimeoutHandle")
 @RestController
 @RequestMapping("/order")
 public class FeignHystrixOrderController {
@@ -25,7 +27,12 @@ public class FeignHystrixOrderController {
         return feignHystrixOrderService.doOk(id);
     }
 
-    @HystrixCommand(fallbackMethod = "doTimeoutHandle",
+//    @HystrixCommand(fallbackMethod = "doTimeoutHandle",
+//            commandProperties = {
+//                    @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "2000")
+//            }
+//    )
+    @HystrixCommand(
             commandProperties = {
                     @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "2000")
             }
@@ -35,7 +42,7 @@ public class FeignHystrixOrderController {
         return feignHystrixOrderService.doTimeout(id);
     }
 
-    String doTimeoutHandle(@PathVariable("id") long id) {
+    String doTimeoutHandle() {
         return "消费端80 调用服务端失败，请稍后再试。";
     }
 }
