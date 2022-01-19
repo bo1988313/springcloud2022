@@ -10,7 +10,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @SpringBootApplication
 @EnableFeignClients
-@EnableHystrix
+//@EnableHystrix
 public class FeignHystrixOrder80 {
 
     public static void main(String[] args) {

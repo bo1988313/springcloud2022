@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 /**
  * @author Administrator
  */
-@DefaultProperties(defaultFallback = "doTimeoutHandle")
+//@DefaultProperties(defaultFallback = "doTimeoutHandle")
 @RestController
 @RequestMapping("/order")
 public class FeignHystrixOrderController {
@@ -27,11 +27,11 @@ public class FeignHystrixOrderController {
         return feignHystrixOrderService.doOk(id);
     }
 
-    @HystrixCommand(
-            commandProperties = {
-                    @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "5000")
-            }
-    )
+//    @HystrixCommand(
+//            commandProperties = {
+//                    @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
+//            }
+//    )
     @GetMapping(value = "/payment/doTimeout/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     String doTimeout(@PathVariable("id") long id) {
         return feignHystrixOrderService.doTimeout(id);

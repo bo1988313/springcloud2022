@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @author Administrator
  */
 @Component
-@FeignClient("CLOUD-PAYMANAGER-HYSTRIX-SERVICE")
+@FeignClient(value = "CLOUD-PAYMANAGER-HYSTRIX-SERVICE", fallback = FeignHystrixOrderFallBackServiceImpl.class)
 public interface FeignHystrixOrderService {
     /**
      * doOk

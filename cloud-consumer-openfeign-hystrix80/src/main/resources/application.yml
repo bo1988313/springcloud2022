@@ -17,6 +17,13 @@ ribbon:
 logging:
   level:
     com.zhl.feignconsumer.service: debug
-hystrix:
-  metrics:
+feign:
+  hystrix:
     enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000
