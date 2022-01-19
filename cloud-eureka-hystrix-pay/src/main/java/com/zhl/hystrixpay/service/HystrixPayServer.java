@@ -20,4 +20,11 @@ public interface HystrixPayServer {
      * @return String
      */
     String doTimeOut(long id);
+
+    /**
+     * circuitBreaker
+     * @param id id
+     * @return String
+     */
+    String circuitBreaker(long id) throws Exception;
 }

@@ -25,4 +25,14 @@ public class PaymentController {
     public String doTimeout(@PathVariable("id") long id) {
         return hystrixPayServer.doTimeOut(id);
     }
+
+    @GetMapping("/circuitbreaker/{id}")
+    public String circuitBreaker(@PathVariable("id") long id) {
+        try {
+            return hystrixPayServer.circuitBreaker(id);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "";
+        }
+    }
 }
