@@ -9,10 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-eureka-server8102" />
         <module name="cloud-zookeeper-paymanager8083" />
-        <module name="cloud-eureka-hystrix-pay" />
         <module name="cloud-consumer-order-zk80" />
         <module name="cloud-consul-order80" />
         <module name="cloud-consul-paymanager8084" />
+        <module name="cloud-eureka-hystrix-pay8085" />
+        <module name="cloud.zhl.hystrixdashboard.HystrixDashBoard" />
         <module name="paymanager-8081" />
         <module name="cloud-eureka-server" />
         <module name="cloud-feign-order80" />
@@ -23,6 +24,20 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloud-common (2)" target="8" />
+      <module name="cloud-consul-order80 (2)" target="8" />
+      <module name="cloud-consul-paymanager8084 (1)" target="8" />
+      <module name="cloud-consumer-openfeign-hystrix80 (1)" target="8" />
+      <module name="cloud-consumer-order-zk80 (1)" target="8" />
+      <module name="cloud-consumer-order80 (2)" target="8" />
+      <module name="cloud-eureka-server (1)" target="8" />
+      <module name="cloud-eureka-server8102 (1)" target="8" />
+      <module name="cloud-feign-order80 (1)" target="8" />
+      <module name="cloud-hystrix-dashboard" target="8" />
+      <module name="cloud-hystrix-dashboard9001" target="8" />
+      <module name="cloud-zookeeper-paymanager8083 (1)" target="8" />
+      <module name="paymanager-8081 (1)" target="8" />
+      <module name="paymanager8082 (1)" target="8" />
       <module name="payment-8081" target="8" />
     </bytecodeTargetLevel>
   </component>

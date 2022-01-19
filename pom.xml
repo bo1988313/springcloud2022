@@ -21,6 +21,7 @@
         <module>cloud-feign-order80</module>
         <module>cloud-eureka-hystrix-pay</module>
         <module>cloud-consumer-openfeign-hystrix80</module>
+        <module>cloud.zhl.hystrixdashboard.HystrixDashBoard</module>
     </modules>
     <packaging>pom</packaging>
 
