@@ -7,16 +7,18 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: CLOUD-PAYMANAGER-HYSTRIX-SERVICE
+#        - id: CLOUD-PAYMANAGER-HYSTRIX-SERVICE
 #          uri: http://localhost:8085
-          uri: lb://CLOUD-PAYMANAGER-HYSTRIX-SERVICE
-          predicates:
-            - Path=/payment/**
+##          uri: lb://CLOUD-PAYMANAGER-HYSTRIX-SERVICE
+#          predicates:
+#            - Path=/payment/**
+#            - Before=2022-01-19T21:58:59.408+08:00[Asia/Shanghai]
 
         - id: CLOUD-PAYMANAGER-SERVICE
           uri: lb://CLOUD-PAYMANAGER-SERVICE
           predicates:
             - Path=/payment/**
+#            - Before=2022-01-19T21:58:59.408+08:00[Asia/Shanghai]
       discovery:
         locator:
           enabled: true
