@@ -14,8 +14,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient
 @EnableDiscoveryClient
 @MapperScan("com.zhl.springcloud2020.paymanager.mapper")
-public class PayManager {
+public class PayManager8081 {
     public static void main(String[] args) {
-        SpringApplication.run(PayManager.class, args);
+        SpringApplication.run(PayManager8081.class, args);
     }
 }

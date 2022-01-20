@@ -7,10 +7,19 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: payment_rout
-          uri: http://localhost:8085
+        - id: CLOUD-PAYMANAGER-HYSTRIX-SERVICE
+#          uri: http://localhost:8085
+          uri: lb://CLOUD-PAYMANAGER-HYSTRIX-SERVICE
           predicates:
             - Path=/payment/**
+
+        - id: CLOUD-PAYMANAGER-SERVICE
+          uri: lb://CLOUD-PAYMANAGER-SERVICE
+          predicates:
+            - Path=/payment/**
+      discovery:
+        locator:
+          enabled: true
 eureka:
   instance:
     prefer-ip-address: true
