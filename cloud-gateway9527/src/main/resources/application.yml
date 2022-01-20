@@ -1,0 +1,21 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: payment_rout
+          uri: http://localhost:8085
+          predicates:
+            - Path=/payment/**
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://localhost.eureka8101.com:8101/eureka/
+#      defaultZone: http://localhost.eureka8101.com:8101/eureka/,http://localhost.eureka8101.com:8102/eureka/
