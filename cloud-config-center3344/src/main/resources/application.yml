@@ -9,49 +9,8 @@ spring:
       server:
         git:
           search-paths:
-            - cloud-config
-          uri: git@github.com:bo1988313/cloud-config.git
-          strict-host-key-checking: false
-          ignore-local-ssh-settings: true
-          private-key: |
-            -----BEGIN OPENSSH PRIVATE KEY-----
-            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
-            -----END OPENSSH PRIVATE KEY-----
+            - springcloudconfig
+          uri: https://gitee.com/zhuhaiong/springcloudconfig.git
       label: master
 eureka:
   instance:
