@@ -1,6 +1,4 @@
-package com.zhl.hystrixpay.service;
-
-import com.zhl.springcloud2020.common.entities.Result;
+package com.zhl.hystrixpay8086.service;
 
 /**
  * @author Administrator

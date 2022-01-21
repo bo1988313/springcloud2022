@@ -1,4 +1,4 @@
-package com.zhl.hystrixpay;
+package com.zhl.hystrixpay8086;
 
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
 import org.springframework.boot.SpringApplication;

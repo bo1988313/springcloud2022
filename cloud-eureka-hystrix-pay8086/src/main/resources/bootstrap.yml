@@ -7,3 +7,9 @@ spring:
       label: master
       name: cloudPaymanagerHystrixService
       profile: dev
+#暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

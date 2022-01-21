@@ -1,10 +1,10 @@
-package com.zhl.hystrixpay.service.impl;
+package com.zhl.hystrixpay8086.service.impl;
 
 import cn.hutool.core.lang.UUID;
 import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
-import com.zhl.hystrixpay.service.HystrixPayServer;
+import com.zhl.hystrixpay8086.service.HystrixPayServer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 

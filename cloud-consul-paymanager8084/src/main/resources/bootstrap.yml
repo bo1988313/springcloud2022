@@ -4,3 +4,9 @@ spring:
       uri: http://localhost:3344
       label: master
       name: cloudPaymanagerconsulService
+#暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
