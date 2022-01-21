@@ -14,6 +14,7 @@
         <module name="cloud-consul-order80" />
         <module name="cloud-eureka-server8101" />
         <module name="cloud-consul-paymanager8084" />
+        <module name="cloud-eureka-hystrix-pay8086" />
         <module name="cloud-eureka-hystrix-pay8085" />
         <module name="cloud-gateway9527" />
         <module name="paymanager-8081" />
@@ -32,6 +33,7 @@
       <module name="cloud-consumer-openfeign-hystrix80 (1)" target="8" />
       <module name="cloud-consumer-order-zk80 (1)" target="8" />
       <module name="cloud-consumer-order80 (2)" target="8" />
+      <module name="cloud-eureka-server" target="8" />
       <module name="cloud-eureka-server (1)" target="8" />
       <module name="cloud-eureka-server8102 (1)" target="8" />
       <module name="cloud-feign-order80 (1)" target="8" />

@@ -1,0 +1,9 @@
+server:
+  port: 8086
+spring:
+  cloud:
+    config:
+      uri: http://localhost:3344
+      label: master
+      name: cloudPaymanagerHystrixService
+      profile: dev
