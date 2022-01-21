@@ -1,0 +1,9 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    config:
+      uri: http://localhost:3344
+      label: master
+      name: cloudPaymanagerService
+      profile: dev
