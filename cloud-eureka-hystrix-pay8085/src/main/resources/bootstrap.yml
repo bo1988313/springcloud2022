@@ -12,9 +12,19 @@ spring:
     consumer:
       group-id: springcloudConfig
     bootstrap-servers: localhost.kafka:9092
+  application:
+    name: cloud-eureka-stream-producer
 #暴露监控端点
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:

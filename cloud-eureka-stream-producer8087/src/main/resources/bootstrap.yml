@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: test1
+  application:
+    name: cloud-eureka-stream-producer
+  kafka:
+    bootstrap-servers: localhost.kafka:9092
+#暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://localhost.eureka8101.com:8101/eureka/

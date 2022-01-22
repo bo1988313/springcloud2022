@@ -24,6 +24,7 @@
         <module name="paymanager8082" />
         <module name="cloud.zhl.hystrixdashboard9001" />
         <module name="cloud-consumer-order80" />
+        <module name="cloud-eureka-stream-producer8087" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
