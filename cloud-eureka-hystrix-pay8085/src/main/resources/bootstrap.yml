@@ -5,6 +5,13 @@ spring:
       label: master
       name: cloudPaymanagerHystrixService
       profile: dev
+    bus:
+      refresh:
+        enabled: true
+  kafka:
+    consumer:
+      group-id: springcloudConfig
+    bootstrap-servers: localhost.kafka:9092
 #暴露监控端点
 management:
   endpoints:

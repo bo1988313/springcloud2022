@@ -4,6 +4,13 @@ spring:
       uri: http://localhost:3344
       label: master
       name: cloudPaymanagerconsulService
+    bus:
+      refresh:
+        enabled: true
+  kafka:
+    bootstrap-servers: localhost.kafka:9092
+    consumer:
+      group-id: springcloudConfig
 #暴露监控端点
 management:
   endpoints:

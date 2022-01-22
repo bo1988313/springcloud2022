@@ -5,6 +5,9 @@ spring:
   application:
     name: cloud-config-service
   cloud:
+    bus:
+      refresh:
+        enabled: true
     config:
       server:
         git:
@@ -12,6 +15,10 @@ spring:
             - springcloudconfig
           uri: https://gitee.com/zhuhaiong/springcloudconfig.git
       label: master
+  kafka:
+    bootstrap-servers: localhost.kafka:9092
+    consumer:
+      group-id: springcloudConfig
 eureka:
   instance:
     prefer-ip-address: true
