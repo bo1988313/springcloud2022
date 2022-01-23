@@ -14,11 +14,13 @@
         <module name="cloud-consul-order80" />
         <module name="cloud-eureka-server8101" />
         <module name="cloud-consul-paymanager8084" />
+        <module name="cloud-eureka-stream-consumer8089" />
         <module name="cloud-eureka-hystrix-pay8086" />
         <module name="cloud-eureka-hystrix-pay8085" />
         <module name="cloud-gateway9527" />
         <module name="paymanager-8081" />
         <module name="cloud-feign-order80" />
+        <module name="cloud-eureka-stream-consumer8088" />
         <module name="cloud-consumer-openfeign-hystrix80" />
         <module name="cloud-common" />
         <module name="paymanager8082" />

@@ -26,6 +26,8 @@
         <module>cloud-config-center3344</module>
         <module>cloud-eureka-hystrix-pay8086</module>
         <module>cloud-eureka-stream-producer8087</module>
+        <module>cloud-eureka-stream-consumer8088</module>
+        <module>cloud-eureka-stream-consumer8089</module>
     </modules>
     <packaging>pom</packaging>
 

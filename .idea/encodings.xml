@@ -23,6 +23,10 @@
     <file url="file://$PROJECT_DIR$/cloud-eureka-server8101/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-server8102/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-server8102/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-eureka-stream-consumer8088/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-eureka-stream-consumer8088/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-eureka-stream-consumer8089/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-eureka-stream-consumer8089/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-stream-producer8087/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-stream-producer8087/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-feign-order80/src/main/java" charset="UTF-8" />
