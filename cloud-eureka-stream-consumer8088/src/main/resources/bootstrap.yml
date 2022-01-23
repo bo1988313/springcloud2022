@@ -1,25 +1,7 @@
 spring:
   cloud:
-    stream:
-      bindings:
-        input:
-          destination: test1
-          content-type: application/json
-          group: cloud-eureka-stream-consumer
-  application:
-    name: cloud-eureka-stream-consumer
-  kafka:
-    bootstrap-servers: localhost.kafka:9092
-#暴露监控端点
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-eureka:
-  instance:
-    prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}
-  client:
-    service-url:
-      defaultZone: http://localhost.eureka8101.com:8101/eureka/
+    config:
+      uri: http://localhost:3344
+      label: master
+      name: cloudEurekaStreamConsumer
+      profile: dev
