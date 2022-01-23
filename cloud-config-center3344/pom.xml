@@ -18,6 +18,12 @@
 
 
     <dependencies>
+        <!--整合sleuth 全链路监控 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+
         <!-- 整合bus kafka -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

@@ -5,3 +5,13 @@ spring:
       label: master
       name: cloudConsumerService
       profile: dev
+#server:
+#  port: 80
+#spring:
+#  application:
+#    name: cloud-consumer-service
+#  zipkin:
+#    base-url: http://localhost:9411
+#  sleuth:
+#    sampler:
+#      probability: 1

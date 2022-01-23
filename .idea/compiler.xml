@@ -17,6 +17,7 @@
         <module name="cloud-eureka-stream-consumer8089" />
         <module name="cloud-eureka-hystrix-pay8086" />
         <module name="cloud-eureka-hystrix-pay8085" />
+        <module name="ali-pay-server8090" />
         <module name="cloud-gateway9527" />
         <module name="paymanager-8081" />
         <module name="cloud-feign-order80" />
@@ -25,6 +26,7 @@
         <module name="cloud-common" />
         <module name="paymanager8082" />
         <module name="cloud.zhl.hystrixdashboard9001" />
+        <module name="ali-nacos-consumer83" />
         <module name="cloud-consumer-order80" />
         <module name="cloud-eureka-stream-producer8087" />
       </profile>

@@ -24,7 +24,7 @@ public class ConsumerOrderController {
     private OpenFeignOrderService openFeignOrderService;
 
     @GetMapping(value = "/payment/create", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Result savePayment(@RequestBody Payment payment) {
+    public Result savePayment( Payment payment) {
         return openFeignOrderService.savePayment(payment);
     }
 
