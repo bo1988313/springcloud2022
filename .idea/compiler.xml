@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-config-center3344" />
+        <module name="ali-nacos-config3344" />
         <module name="cloud-eureka-server8102" />
         <module name="cloud-zookeeper-paymanager8083" />
         <module name="cloud-consumer-order-zk80" />

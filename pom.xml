@@ -30,6 +30,7 @@
         <module>cloud-eureka-stream-consumer8089</module>
         <module>ali-pay-server8090</module>
         <module>ali-nacos-consumer83</module>
+        <module>ali-nacos-config3344</module>
     </modules>
     <packaging>pom</packaging>
 
