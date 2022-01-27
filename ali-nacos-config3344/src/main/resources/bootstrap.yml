@@ -2,12 +2,18 @@ spring:
   application:
     name: ali-nacos-center
   cloud:
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
+#      config:
+#        file-extension: yaml
+#        server-addr: localhost:8848
     nacos:
       discovery:
-        server-addr: localhost:8848
+        server-addr: localhost.kafka:8848
       config:
         file-extension: yaml
-        server-addr: localhost:8848
+        server-addr: localhost.kafka:8848
 #management:
 #  endpoints:
 #    web:
