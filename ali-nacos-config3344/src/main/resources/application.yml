@@ -2,4 +2,6 @@ server:
   port: 3344
 spring:
   profiles:
+#    active: pro
+#    active: test
     active: dev
