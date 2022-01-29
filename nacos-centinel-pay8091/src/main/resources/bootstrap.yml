@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:80
+      discovery:
+        server-addr: localhost:80
+    sentinel:
+      transport:
+        dashboard: localhost.nacos1:8080
+  application:
+    name: ali-nacos-sentinel
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

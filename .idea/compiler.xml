@@ -11,6 +11,7 @@
         <module name="ali-nacos-config3344" />
         <module name="cloud-eureka-server8102" />
         <module name="cloud-zookeeper-paymanager8083" />
+        <module name="nacos-centinel-pay8091" />
         <module name="cloud-consumer-order-zk80" />
         <module name="cloud-consul-order80" />
         <module name="cloud-eureka-server8101" />
