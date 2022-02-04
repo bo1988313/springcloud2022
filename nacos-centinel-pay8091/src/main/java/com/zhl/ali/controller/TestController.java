@@ -2,6 +2,7 @@ package com.zhl.ali.controller;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
+import com.zhl.ali.fallback.MyFallback;
 import com.zhl.ali.handler.Myhandler;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -42,8 +43,9 @@ public class TestController {
     }
 
     @GetMapping(value = "/gloabLimit", produces = MediaType.APPLICATION_JSON_VALUE)
-    @SentinelResource(value = "gloabLimit" , blockHandlerClass = Myhandler.class, blockHandler = "dealBlockException")
+    @SentinelResource(value = "gloabLimit" , blockHandlerClass = Myhandler.class, blockHandler = "dealBlockException", fallbackClass = MyFallback.class, fallback = "dealfallback")
     public String gloabLimit()  {
+        int a = 10/0;
         return "it,s Gloab";
     }
 }

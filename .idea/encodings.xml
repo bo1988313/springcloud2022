@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/ali-nacos-centinel-feign-order84/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ali-nacos-centinel-feign-order84/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ali-nacos-config3344/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ali-nacos-config3344/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ali-nacos-consumer83/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ali-nacos-consumer83/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ali-nacos-sentinel-pay8092/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ali-nacos-sentinel-pay8092/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ali-pay-server8090/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ali-pay-server8090/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-common/src/main/java" charset="UTF-8" />
