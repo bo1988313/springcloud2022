@@ -8,6 +8,14 @@ spring:
     sentinel:
       transport:
         dashboard: localhost.nacos1:8080
+      datasource:
+        ds1:
+          nacos:
+            server-addr: localhost:80
+            dataId: ali-nacos-sentinel-openfeign-order
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
   application:
     name: ali-nacos-sentinel-openfeign-order
 management:
