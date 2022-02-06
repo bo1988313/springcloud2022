@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:80
+      discovery:
+        server-addr: localhost:80
+    sentinel:
+      transport:
+        dashboard: localhost.nacos1:8080
+#      datasource:
+#        ds1:
+#          nacos:
+#            server-addr: localhost:80
+#            dataId: ali-nacos-sentinel-seata-account
+#            groupId: DEFAULT_GROUP
+#            data-type: json
+#            rule-type: flow
+  application:
+    name: ali-nacos-sentinel-seata-account
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

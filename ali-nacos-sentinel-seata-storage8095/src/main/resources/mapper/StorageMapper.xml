@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhl.storage.mapper.StorageMapper">
+    <update id="updateStorage" parameterType="com.zhl.springcloud2020.common.entities.Storage">
+        UPDATE `seata_storage`.`t_storage`
+        SET `productid` = ${productid},
+            `total`     = ${total},
+            `used`      = ${used},
+            `residue`   = ${residue}
+        WHERE `id` = ${id};
+    </update>
+    <select id="selectStorageByProductid" parameterType="int"
+            resultType="com.zhl.springcloud2020.common.entities.Storage">
+        SELECT *
+        FROM `seata_storage`.`t_storage`
+        WHERE `productid` = ${productid} LIMIT 1;
+    </select>
+</mapper>

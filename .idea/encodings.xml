@@ -9,6 +9,12 @@
     <file url="file://$PROJECT_DIR$/ali-nacos-consumer83/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ali-nacos-sentinel-pay8092/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ali-nacos-sentinel-pay8092/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ali-nacos-sentinel-seata-account8094/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ali-nacos-sentinel-seata-account8094/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ali-nacos-sentinel-seata-order8093/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ali-nacos-sentinel-seata-order8093/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ali-nacos-sentinel-seata-storage8095/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ali-nacos-sentinel-seata-storage8095/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ali-pay-server8090/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ali-pay-server8090/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-common/src/main/java" charset="UTF-8" />

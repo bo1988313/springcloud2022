@@ -8,6 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-config-center3344" />
+        <module name="ali-nacos-sentinel-seata-account8094" />
+        <module name="ali-nacos-sentinel-seata-storage8095" />
         <module name="cloud-consumer-order-zk80" />
         <module name="cloud-consul-order80" />
         <module name="cloud-consul-paymanager8084" />
@@ -18,6 +20,7 @@
         <module name="paymanager8082" />
         <module name="cloud.zhl.hystrixdashboard9001" />
         <module name="ali-nacos-consumer83" />
+        <module name="ali-nacos-sentinel-seata-order8093" />
         <module name="ali-nacos-config3344" />
         <module name="cloud-eureka-server8102" />
         <module name="cloud-zookeeper-paymanager8083" />
